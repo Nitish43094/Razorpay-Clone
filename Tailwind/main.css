@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.py-card{
+    transition: all 0.4s;
+}
+.py-card:hover{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: scale(1.01);
+}
+
+.move-image{
+    animation: 10s infinite linear moveCompany;
+}
+@keyframes moveCompany {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: -50%;
+    }
+}
